@@ -6,12 +6,13 @@ import coin
 GRAVITY = 0.5
 SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 760
-PLAYER_SPRITE = pygame.transform.scale(pygame.image.load("assets/player.png").convert_alpha(), (50, 50))
-COIN_SPRITE = pygame.transform.scale(pygame.image.load("assets/coin.png").convert_alpha(), (25, 25))
 
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Pink Slime Coins")
+
+PLAYER_SPRITE = pygame.transform.scale(pygame.image.load("assets/player.png").convert_alpha(), (50, 50))
+COIN_SPRITE = pygame.transform.scale(pygame.image.load("assets/coin.png").convert_alpha(), (25, 25))
 
 async def main():
     clock = pygame.time.Clock()
