@@ -1,5 +1,6 @@
+import pygame
+import sys
 import asyncio
-import pygame, sys
 import player as play
 import coin
 
@@ -16,6 +17,8 @@ COIN_SPRITE = pygame.transform.scale(pygame.image.load("assets/coin.png").conver
 
 async def main():
     clock = pygame.time.Clock()
+    
+    
     player = play.Player(50, 700 - 28.125, PLAYER_SPRITE)
     platforms = [pygame.Rect(0, 700, 1200, 60),
                  pygame.Rect(200, 600, 100, 25),
