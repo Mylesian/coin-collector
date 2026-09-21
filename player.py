@@ -9,7 +9,7 @@ class Player(pygame.Rect):
         this.sprite = sprite
         this.speed = 5
         this.velocity = pygame.Vector2(0, 0)
-        this.jump_strength = 10
+        this.jump_strength = 8
         this.on_ground = False
         
     def move_left(this):
