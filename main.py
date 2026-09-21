@@ -12,12 +12,11 @@ COIN_SPRITE = pygame.transform.scale(pygame.image.load("assets/coin.png").conver
 
 pygame.init()
 
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption("Pink Slime Coins")
+clock = pygame.time.Clock()
+
 async def main():
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    pygame.display.set_caption("Pink Slime Coins")
-    clock = pygame.time.Clock()
-    
-    
     player = play.Player(50, 700 - 28.125, PLAYER_SPRITE)
     platforms = [pygame.Rect(0, 700, 1200, 60),
                  pygame.Rect(200, 600, 100, 25),
